@@ -25,7 +25,7 @@ const IndexPage = () => (
       </button>
       </div>
       <div className="col-sm-12 col-md-6 text-center">
-      <button class="btn btn-info">
+      <button className="btn btn-info">
       <Link className="text-white" style={{ textDecoration: `none` }} to="/search-subject/">Find by Subject Name</Link>
       </button>
       </div>

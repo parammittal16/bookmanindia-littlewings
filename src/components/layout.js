@@ -7,20 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> style={{
@@ -31,7 +21,7 @@ const Layout = ({ children }) => {
         }}
       */}
       <div>
-        <div style={{height: `100vh`}} class="container">
+        <div style={{height: `100vh`}} className="container">
         <main>{children}</main>
         </div>
         <div className="fixed-bottom bg-primary text-white text-center py-2">

@@ -14,8 +14,8 @@ const searchClass = ({data}) => {
       <div className="row justify-content-center mt-5">
     { 
         classes.map(item => {
-            return <div className="col-sm-6 col-md-2">
-            <Link to="/">
+            return <div key={item.node.id} className="col-sm-6 col-md-2">
+            <Link to={`/search-class/${item.node.classname}`}>
                 <div className="card text-white bg-primary mb-3">
                 <div className="card-body">
                     <h5 className="card-title text-center">{item.node.classname}</h5>
