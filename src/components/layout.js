@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import "./bootstrap.min.css"
 
 const Layout = ({ children }) => {
-  
+
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> style={{
@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         }}
       */}
       <div>
-        <div style={{height: `100vh`}} className="container">
+        <div className="container">
         <main>{children}</main>
         </div>
         <div className="fixed-bottom bg-primary text-white text-center py-2">

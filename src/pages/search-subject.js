@@ -11,12 +11,15 @@ const searchSubject = ({data}) => {
   <Layout>
     <SEO title="Search Subject" />
     <div className="container">
+    <div className="row justify-content-center mt-5">
+            <h3>Subjects</h3>
+          </div>
       <div className="row justify-content-center mt-5">
     { 
         subjects.map(item => {
             return <div key={item.node.id} className="col-sm-6 col-md-2">
             <Link to={`/search-subject/${item.node.subjectname}`}>
-                <div className="card text-white bg-primary mb-3">
+                <div className="card text-white bg-success mb-3">
                 <div className="card-body">
                     <h5 className="card-title text-center">{item.node.subjectname}</h5>
                 </div>

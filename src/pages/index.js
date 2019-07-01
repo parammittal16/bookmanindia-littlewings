@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="container">
       <div className="row justify-content-center">
-      <div className="col-12 my-2" style={{ maxWidth: `120px` }}>
+      <div className="col-12 my-4" style={{ maxWidth: `150px` }}>
       <Image />
       </div>
         <div className="col-12 text-center">
@@ -20,14 +20,22 @@ const IndexPage = () => (
       <div className="container">
       <div className="row justify-content-center mt-5">
       <div className="col-sm-12 col-md-6 text-center">
-      <button className="btn btn-info">
-      <Link className="text-white" style={{ textDecoration: `none` }} to="/search-class/">Find by Class Name</Link>
-      </button>
+      <Link className="text-white" style={{ textDecoration: `none` }} to="/search-class/">
+      <div className="card text-white bg-primary my-3">
+         <div className="card-body">
+            <h5 className="card-title text-center">Find by Class</h5>
+         </div>
+        </div>
+      </Link>
       </div>
       <div className="col-sm-12 col-md-6 text-center">
-      <button className="btn btn-info">
-      <Link className="text-white" style={{ textDecoration: `none` }} to="/search-subject/">Find by Subject Name</Link>
-      </button>
+      <Link className="text-white" style={{ textDecoration: `none` }} to="/search-subject/">
+      <div className="card text-white bg-primary my-3">
+         <div className="card-body">
+            <h5 className="card-title text-center">Find by Subject</h5>
+         </div>
+        </div>
+      </Link>
       </div>
       </div>
       </div>
