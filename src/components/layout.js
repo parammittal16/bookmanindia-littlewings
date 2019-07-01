@@ -8,10 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
 import "./bootstrap.min.css"
-// import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,21 +23,23 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> style={{
+          margin: `100px auto`,
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
-      >
+      */}
+      <div>
+        <div style={{height: `100vh`}} class="container">
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        </div>
+        <div className="fixed-bottom bg-primary text-white text-center py-2">
+          © {new Date().getFullYear()}, Copyright
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+          <b><a style={{textDecoration:`none`, color:`white`}} href="https://www.bookmanindia.com">Bookman India</a></b>
+        </div>
+      
       </div>
     </>
   )
