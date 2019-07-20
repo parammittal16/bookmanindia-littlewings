@@ -28,8 +28,7 @@ const subjectsTemplate = ({data}) => {
             
             })
         }
-        
-          </div>
+         </div>
         </div> 
       </Layout>
 )}
