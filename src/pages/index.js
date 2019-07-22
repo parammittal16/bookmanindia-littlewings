@@ -29,10 +29,10 @@ const IndexPage = () => (
       </Link>
       </div>
       <div className="col-sm-12 col-md-6 text-center">
-      <Link className="text-white" style={{ textDecoration: `none` }} to="/search-subject/">
-      <div className="card text-white bg-primary my-3">
-         <div className="card-body">
-            <h5 className="card-title text-center">Find by Subject</h5>
+        <Link className="text-white" style={{ textDecoration: `none` }} to="/search-subject/">
+          <div className="card text-white bg-primary my-3">
+            <div className="card-body">
+              <h5 className="card-title text-center">Find by Subject</h5>
          </div>
         </div>
       </Link>
